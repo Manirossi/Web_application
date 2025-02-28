@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barcode Generator</title>
+    <link rel="stylesheet" href="b.css">
+</head>
+<body>
+
+    <div class="container">
+        
+        <h2>Barcode Generator</h2>
+        
+
+        <!-- <input type="text" id="barcodeInput" placeholder="Enter text or number"> -->
+        <input type="text" id="barcodeInput" value="ABCD0001Z" placeholder="Enter text or number">
+        
+        <button class="generate" onclick="generateBarcode()">Generate</button><BR>
+        <button class="download" onclick="downloadBarcode()">Download PDF</button>
+        <button class="print" onclick="printBarcode()">Print </button>
+        <button class="save" onclick="saveToDatabase()">Save </button>
+
+        <div class="barcode-container">
+            <svg id="barcodeSvg"></svg> <!-- Barcode will appear here -->
+        </div>
+    </div>
+
+    <!-- JsBarcode & jsPDF Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/jsbarcode@3.11.0/dist/JsBarcode.all.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="b.js"></script>
+
+    
+
+</body>
+</html>

@@ -1,0 +1,112 @@
+/* Dark Theme */
+body {
+    font-family: Arial, sans-serif;
+    background-image: linear-gradient(to left, black,darkred,black); 
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    width: 50%;
+    background: #857f7f;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.1);
+    text-align: center;
+}
+
+/* Title Styles */
+h2 {
+    color: #00aaff;
+}
+
+/* Stacked Layout */
+.input-box, .barcode-container {
+    width: 90%;
+    background: #a09d9d;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.1);
+    margin: 10px auto;
+}
+
+/* Barcode Preview Area */
+.barcode-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ffffff; /* White background */
+    width: 50%;
+    height: 170px;
+    border-radius: 5px;
+}
+
+/* Input Field */
+input {
+    width: 50%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #555;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #333;
+    color: white;
+}
+
+/* Buttons */
+button {
+    padding: 10px 15px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Blue Generate Button */
+button.generate {
+    background-color: #007bff;
+    color: white;
+}
+
+button.generate:hover {
+    background-color: #0056b3;
+}
+
+/* Red Download Button */
+button.download {
+    background-color: #ff3333;
+    color: white;
+}
+
+button.print {
+    background-color: orangered;
+    color: white;
+}
+
+button.save {
+    background-color: rgb(16, 167, 79);
+    color: white;
+}
+
+button.download:hover {
+    background-color: #b30000;
+}
+
+/* Center align text inside input */
+input {
+    width: 50%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #555;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #333;
+    color: white;
+    text-align: center; /* Center the text */
+}
